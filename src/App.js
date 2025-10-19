@@ -17,10 +17,7 @@ function diminuir(){
       setNumero(numero - 1 )
 }
 
-if (numero === 10){
-alert("Oi neon rsrsrs")
 
-}
 
 
 return <body className="body">
