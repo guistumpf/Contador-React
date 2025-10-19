@@ -17,12 +17,22 @@ function diminuir(){
       setNumero(numero - 1 )
 }
 
+if (numero === 10){
+alert("Oi neon rsrsrs")
 
-    return <div>
+}
+
+
+return <body className="body">
+
+   
+   <div className="div">
         <h1>Contador</h1>
-        <p>{numero}</p>
-        <button onClick={diminuir}>menos</button>
-        <button onClick={zero}>reset</button>
-        <button onClick={aumentar}>mais</button>
+        <p className="p">{numero}</p>
+        <button onClick={diminuir} className="button">menos</button>
+        <button onClick={zero} className="button">reset</button>
+        <button onClick={aumentar} className="button">mais</button>
     </div>
+    
+</body>
 }
