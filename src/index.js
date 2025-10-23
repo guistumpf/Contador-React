@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import './index.css'
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-< App/>
+<><App/> <App/></>
 );
 
 
-// é necessário adicionar o css, preciso também entender useState e setnumero(setstateaction) o codigo parece estar organizado e provavelmente vou me basear nele para a apresentação
+// It is necessary to add the CSS. I also need to understand useState and setNumero (setStateAction). The code seems organized and I will probably use it as a reference for the presentation.
