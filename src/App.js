@@ -27,9 +27,6 @@ if(numero > 0){
 }
 
 
-
-
-
 return ( 
 <body className="body">
  
