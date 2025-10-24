@@ -3,8 +3,9 @@ import { useState } from "react"
 export default function App(){
     
     let textColor
-    const [numero, setNumero] = useState (0)
-    
+    const [numero, setNumero] = useState(0)
+
+
 function zero(){
     setNumero(0)
 
@@ -12,23 +13,24 @@ function zero(){
 
     function aumentar(){
         setNumero(numero + 1 )
+    
     }
     
 function diminuir(){
       setNumero(numero - 1 )
 }
 
+
 if(numero > 0){
-    textColor ="green" 
-} else if(numero < 0 ){
-    textColor = "red"
+    textColor = "green"
+} else if(numero < 0){   
+     textColor = "red"
 } else {
-    textColor = "white"
+    textColor = ""
 }
+    
 
-
-return ( 
-<body className="body">
+return <body className="body">
  
    <div className="div">
     <title>Contador</title>
@@ -36,12 +38,12 @@ return (
         <p className="p" style={{ color: textColor }}>
             {numero}
             </p>
-        <button onClick={diminuir} className="button">menos</button>
-        <button onClick={zero} className="button">reset</button>
-        <button onClick={aumentar} className="button">mais</button>
+        <button onClick={diminuir} className="button">➖</button>
+        <button onClick={zero} className="button">🔄️</button>
+        <button onClick={aumentar} className="button">➕</button>
     </div>
         
 </body> 
-)
+
 
 }
