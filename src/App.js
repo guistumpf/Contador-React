@@ -30,9 +30,7 @@ if(numero > 0){
 }
     
 
-return <body className="body">
- 
-   <div className="div">
+return <div className="div">
     <title>Contador</title>
         <h1>Contador</h1>
         <p className="p" style={{ color: textColor }}>
@@ -42,8 +40,8 @@ return <body className="body">
         <button onClick={zero} className="button">🔄️</button>
         <button onClick={aumentar} className="button">➕</button>
     </div>
+
         
-</body> 
 
 
 }
